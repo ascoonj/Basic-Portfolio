@@ -1,16 +1,26 @@
 * {
     box-sizing: border-box;
 }
+html {
+    height: 100%;
+}
 
 body {
     margin: 0 auto 0  auto;
     background-image: url("../images/upfeathers.png");
     background-repeat: repeat;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
 }
 
 .navbar {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -27,7 +37,7 @@ h1, h2, h3 {
 }
 
 #myname {
-    position: fixed;
+    position: relative;
     width: 400px;
     height: 80px;
     top: 0px;
@@ -46,7 +56,7 @@ h1, h2, h3 {
 
 
 .navlist {
-    position: fixed;
+    position: absolute;
     width: 240px;
     height: 20px;
     top: 30px;
@@ -57,6 +67,7 @@ h1, h2, h3 {
     padding: 0;
     list-style: none;
     vertical-align: middle;
+    z-index: 4;
 }
 
 li {
@@ -92,7 +103,7 @@ a {
 }
 
 .about {
-    position: relative;
+    position: absolute;
     top: 110px;
     left: 150px;
     height: 500px;
@@ -141,7 +152,7 @@ background-color: white;
     position: absolute;
     width: 270px;
     top: 110px;
-    right: 580px;
+    left: 840px;
     border-style: solid;
     border-color: lightgray;
     border-width: 1px;
@@ -175,6 +186,7 @@ background-color: white;
     width: 200px;
     list-style: none;
     padding:0;
+    z-index: 2;
 }
 
 .singleicon {
@@ -209,16 +221,17 @@ footer {
  }
 
  .foliopage {
-    position: relative;
+    position: absolute;
     top: 110px;
     left: 150px;
-    height: 700px;
+    height: 610px;
     width: 650px;
     border-style: solid;
     border-color: lightgray;
     border-width: 1px;
     padding: 15px;
     background-color: white;
+    z-index: 1;
     
 }
 
@@ -226,7 +239,7 @@ footer {
      /* float: left; */
      margin: 20px;
      width: 260px;
-     height: 170px;
+     height: 160px;
      z-index: 1;
  }
 
@@ -240,10 +253,10 @@ footer {
     text-align: center;
     padding-top: 12px;
     width: 260px;
-    height: 45px;
-    z-index: 2;
+    height: 42px;
+    z-index: 3;
     font-size: 20px;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 #first {
@@ -260,26 +273,27 @@ footer {
 
 #third {
     position: absolute;
-    top: 250px;
+    top: 240px;
     left: 20px;
 }
 
 #fourth {
     position: absolute;
-    top: 250px;
+    top: 240px;
     left: 325px;
 }
 
 #fifth {
     position: absolute;
-    top: 445px;
+    top: 425px;
     left: 20px;
 }
 
 input {
     width: 100%;
-    padding: 6px 0px;
-    margin: 8px 0;
+    padding: 6px 2px;
+    margin: 6px 0 10px 0;
+    color: gray;
 }
 
 textarea {
