@@ -101,7 +101,7 @@ a {
     position: absolute;
     top: 110px;
     left: 150px;
-    height: 500px;
+    height: 525px;
     width: 650px;
     border-style: solid;
     border-color: #dddddd;
@@ -127,9 +127,10 @@ a {
     margin-right: 15px;
 }
 
-#content {
-    line-height: 150%;
+p {
+    line-height: 145%;
     color: #777777;
+    text-indent: 30px;
 }
 
 .connect {
