@@ -285,6 +285,12 @@ footer {
     left: 35px;
 }
 
+#sixth {
+    position: absolute;
+    top: 370px;
+    left: 325px;
+}
+
 input {
     width: 100%;
     padding: 6px 2px;
